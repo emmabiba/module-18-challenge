@@ -14,16 +14,17 @@ header {
 
 body {
   font-family: 'Lato', Arial, sans-serif;
+  font-size: 16px;
 }
 
 h1 {
   font-family: 'Poppins', Arial, sans-serif;
-  font-size: 2.2em;
+  font-size: 5em;
   margin-bottom: 30px;
 }
 
 p {
-  line-height: 2em;
+  line-height: 3em;
   margin-bottom: 20px;
 }
 
@@ -33,7 +34,15 @@ img.logo{
   margin: 0 auto;
 }
 
-ul {
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+}
+
+footer ul {
   display: flex;
   justify-content: center;
   list-style: none;
@@ -43,7 +52,7 @@ li a {
   color: #fff;
   text-decoration: none;
   padding-left: 5px;
-  font-size: 1.2em;
+  font-size: 2.2em;
 }
 
 i {
@@ -57,10 +66,19 @@ ul li {
 }
 
 main {
+  background-image: url("images/gulp-bottom-beans.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+div.max-width {
   max-width: 800px;
-  margin: 50px auto;
+  margin: 0px auto;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  padding: 50px 0 150px 0;
 }
 
 section.about {
@@ -71,8 +89,7 @@ a.button {
   background-color: #59331D;
   color: #fff;
   text-decoration: none;
-  padding: 15px 15px;
-  margin-top: 30px;
+  padding: 30px 30px;
   border-radius: 10px;
 }
 
